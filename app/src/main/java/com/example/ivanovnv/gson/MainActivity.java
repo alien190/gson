@@ -35,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
                     .setPrettyPrinting()
                     .create();
         String json = gson.toJson(father);
-        json="";
 
+        Human newfather = gson.fromJson(json,Human.class);
+
+        json = "";
     }
 }
